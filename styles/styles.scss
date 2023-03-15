@@ -345,13 +345,25 @@ section{
 
                     /* you can give things a different amount on progress bar by changing class and width */
                     .html{
-                        width: 90%; /* this will make html at 90% */
+                        width: 80%; /* this will make html at 90% */
                     }
                     .python{
-                        width: 70%;
+                        width: 60%;
                     }
                     .drracket{
-                        width: 50%;
+                        width: 70%;
+                    }
+                    .css{
+                        width: 80%; 
+                    }
+                    .rstudio{
+                        width: 70%; 
+                    }
+                    .javascript{
+                        width: 30%; 
+                    }
+                    .unity{
+                        width: 30%; 
                     }
                 }
             }
@@ -470,6 +482,16 @@ section{
                 font-size: 1.5rem;
                 color: var(--color-white);
                 margin-bottom: 1.5rem;
+                align-items: center;
+                justify-content: center;
+            }
+            p{
+                font-size: 0.8rem;
+                color: var(--color-white);
+                
+                align-items: center;
+                justify-content: center;
+                margin: 0 1rem;
             }
             .icons{
                 display: flex;

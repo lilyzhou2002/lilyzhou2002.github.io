@@ -335,13 +335,25 @@ section {
   width: 60%; /* this will change the progress bar amount */
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 90%; /* this will make html at 90% */
+  width: 80%; /* this will make html at 90% */
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 70%;
+  width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .drracket {
-  width: 50%;
+  width: 70%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .css {
+  width: 80%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .rstudio {
+  width: 70%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .javascript {
+  width: 30%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .unity {
+  width: 30%;
 }
 
 .stat-title {
@@ -455,6 +467,15 @@ section {
   font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.portfolios .portfolio-item .hover-items p {
+  font-size: 0.8rem;
+  color: var(--color-white);
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
 }
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
