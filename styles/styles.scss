@@ -453,7 +453,10 @@ section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    position: absolute;
+    left: 12%;
+    width: 75%;
     .portfolio-item{
         position: relative;
         border-radius: 15px;
@@ -479,19 +482,19 @@ section{
             transform: scale(0);
             transition: all .4s ease-in-out;
             h3{
-                font-size: 1.5rem;
+                font-size: 95%;
                 color: var(--color-white);
                 margin-bottom: 1.5rem;
+                text-align: center;
                 align-items: center;
                 justify-content: center;
             }
             p{
-                font-size: 0.8rem;
+                font-size: 75%;
                 color: var(--color-white);
-                
+                text-align: center;
                 align-items: center;
                 justify-content: center;
-                margin: 0 1rem;
             }
             .icons{
                 display: flex;
@@ -528,7 +531,7 @@ section{
 }
 
 .portfolio-item:hover .hover-items{
-    opacity: 1;
+    opacity: 0.85;
     transform: scale(1);
 }
 
@@ -703,6 +706,7 @@ section{
 .main-btn{
     border-radius: 30px;
     color: inherit;
+    background-color: inherit;
     font-weight: 600;
     position: relative;
     border: 1px solid var(--color-secondary);
@@ -711,8 +715,12 @@ section{
     display: flex;
     align-items: center;
     overflow: hidden;
+    cursor: pointer;
     .btn-text{
         padding: 0 2rem;
+        color: var(--text-colour);
+        align-items: center;
+        justify-content: center;
     }
     .btn-icon{
         background-color: var(--color-secondary);
@@ -721,6 +729,9 @@ section{
         justify-content: center;
         border-radius: 50%;
         padding: 1rem;
+        i{
+            color: rgb(231, 231, 231);
+        }
     }
     &::before{
         content: '';

@@ -434,7 +434,10 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  position: absolute;
+  left: 12%;
+  width: 75%;
 }
 .portfolios .portfolio-item {
   position: relative;
@@ -464,18 +467,19 @@ section {
   transition: all 0.4s ease-in-out;
 }
 .portfolios .portfolio-item .hover-items h3 {
-  font-size: 1.5rem;
+  font-size: 95%;
   color: var(--color-white);
   margin-bottom: 1.5rem;
+  text-align: center;
   align-items: center;
   justify-content: center;
 }
 .portfolios .portfolio-item .hover-items p {
-  font-size: 0.8rem;
+  font-size: 75%;
   color: var(--color-white);
+  text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 0 1rem;
 }
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
@@ -507,7 +511,7 @@ section {
 }
 
 .portfolio-item:hover .hover-items {
-  opacity: 1;
+  opacity: 0.85;
   transform: scale(1);
 }
 
@@ -667,6 +671,7 @@ section {
 .main-btn {
   border-radius: 30px;
   color: inherit;
+  background-color: inherit;
   font-weight: 600;
   position: relative;
   border: 1px solid var(--color-secondary);
@@ -675,9 +680,13 @@ section {
   display: flex;
   align-items: center;
   overflow: hidden;
+  cursor: pointer;
 }
 .main-btn .btn-text {
   padding: 0 2rem;
+  color: var(--text-colour);
+  align-items: center;
+  justify-content: center;
 }
 .main-btn .btn-icon {
   background-color: var(--color-secondary);
@@ -686,6 +695,9 @@ section {
   justify-content: center;
   border-radius: 50%;
   padding: 1rem;
+}
+.main-btn .btn-icon i {
+  color: rgb(231, 231, 231);
 }
 .main-btn::before {
   content: "";
